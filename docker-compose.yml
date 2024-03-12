@@ -25,10 +25,10 @@ services:
   kibana:
     container_name: kibana
     image: kibana:7.17.18
-    ulimits:
-      memlock:
-        soft: -1
-        hard: -1
+      #ulimits:
+      #  memlock:
+      #    soft: -1
+      #    hard: -1
     ports:
       - 5601:5601
     links:
